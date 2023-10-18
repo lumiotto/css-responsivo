@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 24px 0;
+    background-color: crimson;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+header ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container h2 {
+    color: crimson;
+    font-size: 1.5em;
+    margin: 24px 0;
+}
+
+.sobre img {
+    max-width: 100%;
+}
+
+.sobre p {
+    font-size: 1.15em;
+    padding-bottom: 24px;
+
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    margin-bottom: 50px;
+    border-bottom: 3px solid crimson;
+}
+
+.lista-produtos ul li {
+    list-style: none;
+    max-width: 100%;
+}
+
+.lista-produtos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    border-bottom: 3px solid crimson;
+    margin-bottom: 24px;
+}
+
+.lista-produtos img {
+    max-width: 100%;
+    padding-bottom: 8px;
+}
+
+.lista-produtos ul li button {
+    width: 100%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.lista-produtos ul li h3, .lista-produtos ul li p {
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width:1023px) and (min-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    ul li a {
+        font-size: 1.2em;
+    }
+
+    .container h2 {
+        font-size: 1.4em;
+    }
+
+    .sobre {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .sobre img {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+    
+    .lista-produtos ul {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 8px;
+    }
+    
+    ul li a {
+        font-size: 1.2em;
+    }
+
+    .container h2 {
+        font-size: 1.3em;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .sobre img {
+        margin-bottom: 24px;
+    }
+
+    .lista-produtos ul {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
